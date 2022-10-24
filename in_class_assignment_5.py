@@ -26,10 +26,10 @@ def quicksort(numbers_in_a_list):
     #GIVEN: Return statement
     return quicksort(num1) + [numArray] + quicksort(num2)
 
-#Reads in number.txt
-def read_number_txt(readNumber):
+#Reads in numbers.txt
+def read_numbers_txt(readNumbers):
     nums = []
-    with open(readNumberTxt) as file_object:
+    with open(readNumbers) as file_object:
         numLine = file_object.readLine()
         fileNumbers = re.findall("[0-9]+", numLine)
         
@@ -47,7 +47,7 @@ def write_sorted_txt(writeSorted, fileNumbers):
             
 #GIVEN: main function
 def main():
-    fileNumbers = read_number_txt("C:\Users\Ky-long-PC\INFO450\numbers.txt") #Calls the read function for numbers.txt
+    fileNumbers = read_numbers_txt("C:\Users\Ky-long-PC\INFO450\numbers.txt") #Calls the read function for numbers.txt
     
     #GIVEN: Return statement
     return write_sorted_txt("C:\Users\Ky-long-PC\INFO450\sorted.txt", fileNumbers) #Calls the write function for sorted.txt
