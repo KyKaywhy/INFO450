@@ -34,8 +34,8 @@ def read_numbers_txt(readNumbers):
         fileNumbers = re.findall("[0-9]+", numLine)
         
         for y in fileNumbers:
-            z = int(z)
-            nums.append(z)
+            y = int(y)
+            nums.append(y)
     return nums
 
 #Writes the resulting output into sorted.txt
