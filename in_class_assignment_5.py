@@ -46,8 +46,8 @@ def write_sorted_txt(writeSorted, fileNumbers):
             
 #GIVEN: main function
 def main():
-    fileNumbers = read("C:\Users\Ky-long-PC\INFO450\numbers.txt") #Calls the read function for numbers.txt
-    return write("C:\Users\Ky-long-PC\INFO450\sorted.txt", fileNumbers) #Calls the write function for sorted.txt
+    fileNumbers = read_number_txt("C:\Users\Ky-long-PC\INFO450\numbers.txt") #Calls the read function for numbers.txt
+    return write_sorted_txt("C:\Users\Ky-long-PC\INFO450\sorted.txt", fileNumbers) #Calls the write function for sorted.txt
 
 #GIVEN:
 if __name__ == "__main__":
