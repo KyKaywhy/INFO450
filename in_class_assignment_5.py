@@ -22,7 +22,8 @@ def quicksort(numbers_in_a_list):
                 
             if numbers_in_a_list[x] > numArray:
                 num2.append(numbers_in_a_list[x])
-
+                
+    #GIVEN: Return statement
     return quicksort(num1) + [numArray] + quicksort(num2)
 
 #Reads in number.txt
@@ -47,6 +48,8 @@ def write_sorted_txt(writeSorted, fileNumbers):
 #GIVEN: main function
 def main():
     fileNumbers = read_number_txt("C:\Users\Ky-long-PC\INFO450\numbers.txt") #Calls the read function for numbers.txt
+    
+    #GIVEN: Return statement
     return write_sorted_txt("C:\Users\Ky-long-PC\INFO450\sorted.txt", fileNumbers) #Calls the write function for sorted.txt
 
 #GIVEN:
